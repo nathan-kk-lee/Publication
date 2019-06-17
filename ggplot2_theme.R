@@ -1,6 +1,6 @@
 ################################################
-### ggplot2 theme for Pfizer Global Economics
-#############################################
+### ggplot2 theme for MS Word documents ########
+################################################
 
 #packages
 library(grid)
