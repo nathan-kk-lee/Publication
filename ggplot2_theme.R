@@ -1,12 +1,3 @@
-################################################
-### ggplot2 theme for MS Word documents ########
-################################################
-
-#packages
-library(grid)
-library(ggthemes)
-library(ggplot2)
-library(gridExtra)
 
 # theme function
 theme_Publication <- function(base_size=14, base_family="Georgia") {
@@ -17,12 +8,13 @@ theme_Publication <- function(base_size=14, base_family="Georgia") {
                                       size = rel(1.2), hjust = 0.5),
             text = element_text(),
             panel.background = element_rect(colour = NA),
+            plot.caption = element_text(hjust = 0.0, size = 12),
             plot.background = element_rect(colour = NA),
             panel.border = element_rect(colour = NA),
             axis.title = element_text(face = "bold",size = rel(1)),
             axis.title.y = element_text(angle=90,vjust =2),
             axis.title.x = element_text(vjust = -0.2),
-            axis.text = element_text(), 
+            axis.text = element_text(size = 15), 
             axis.line = element_line(colour="black"),
             axis.ticks = element_line(),
             panel.grid.major = element_line(colour="#f0f0f0"),
@@ -31,7 +23,7 @@ theme_Publication <- function(base_size=14, base_family="Georgia") {
             legend.position = "bottom",
             legend.direction = "horizontal",
             legend.key.size= unit(0.2, "cm"),
-            legend.margin = unit(0, "cm"),
+            legend.spacing = unit(0, "cm"),
             legend.title = element_blank(),
             plot.margin=unit(c(10,5,5,5),"mm"),
             strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
@@ -51,18 +43,4 @@ scale_colour_Publication <- function(...){
   discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
