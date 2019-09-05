@@ -14,7 +14,7 @@ theme_Publication <- function(base_size=14, base_family="Georgia") {
             axis.title = element_text(face = "bold",size = rel(1)),
             axis.title.y = element_text(angle=90,vjust =2),
             axis.title.x = element_text(vjust = -0.2),
-            axis.text = element_text(size = 15), 
+            axis.text = element_text(size = 14), 
             axis.line = element_line(colour="black"),
             axis.ticks = element_line(),
             panel.grid.major = element_line(colour="#f0f0f0"),
